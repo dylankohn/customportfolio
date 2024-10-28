@@ -160,6 +160,7 @@ img {
     top: 10%;
     height: auto;
     border: 1px solid #b2b2b2cf;
+    margin-bottom: 2%;
 }
 
 .intro {
@@ -201,7 +202,7 @@ img {
         position: relative;  /* Set to relative to follow normal flow */
         width: 100%; /* Full width minus a bit of margin */
         left: 0; /* Remove any left/right positioning */
-        margin-bottom: 2%;
+        
     }
 
     .row1, .row2 {
@@ -223,6 +224,8 @@ img {
     .intro, .featproj {
         width: 35vw; /* Adjusted width */
         padding: 15px;
+        padding-bottom: 2%;
+        
     }
 
     .row1 {
@@ -236,6 +239,7 @@ img {
     .slideshow {
         height: 45vh; /* Medium height for slideshow on tablets */
         overflow-y: scroll;
+        padding: 2%;
     }
 
     .intro {
