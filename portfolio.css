@@ -172,3 +172,122 @@ img {
     right: 15%; /* Adjust to place it near the bottom of the image */
     width: 20vw;
 }
+
+
+
+/* General styling for all screen sizes (already in your CSS) */
+
+/* Media Queries for Responsive Design */
+
+/* Mobile - screens less than 600px */
+@media (max-width: 600px) {
+    .header {
+        padding: 1rem;
+        text-align: center; /* Center align header text */
+    }
+
+    nav a {
+        font-size: medium; /* Smaller font size for nav links */
+    }
+
+    .slideshow {
+        position: relative;
+        height: 35vh; /* Smaller height for slideshow on small screens */
+        overflow-y: scroll;
+        margin-bottom: 20px;
+    }
+
+    .intro, .featproj {
+        position: relative;  /* Set to relative to follow normal flow */
+        width: 90vw; /* Full width minus a bit of margin */
+        left: 0; /* Remove any left/right positioning */
+        margin-bottom: 2%;
+    }
+
+    .row1, .row2 {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+    .modules {
+        padding: 3%; /* Less padding */
+    }
+}
+
+/* Tablet - screens 600px to 1024px */
+@media (min-width: 600px) and (max-width: 1024px) {
+    header {
+        padding: 1.2rem;
+        text-align: center; /* Center align header text */
+    }
+
+    .intro, .featproj {
+        width: 35vw; /* Adjusted width */
+        padding: 15px;
+    }
+
+    .row1 {
+        grid-template-columns: 1fr 1fr; /* Two columns for row1 */
+    }
+
+    .row2 {
+        grid-template-columns: 2fr 1fr; /* Adjusted column ratios for row2 */
+    }
+
+    .slideshow {
+        height: 45vh; /* Medium height for slideshow on tablets */
+        overflow-y: scroll;
+    }
+
+    .intro {
+        left: 5%; /* Fine-tuned placement for larger screens */
+    }
+
+    .featproj {
+        right: 5%; /* Fine-tuned placement for larger screens */
+    }
+
+}
+
+/* Desktop - screens larger than 1024px */
+@media (min-width: 1024px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    .slideshow {
+        height: 55vh; /* Full height on larger screens */
+    }
+
+    .intro {
+        left: 10%; /* Fine-tuned placement for larger screens */
+    }
+
+    .featproj {
+        right: 10%; /* Fine-tuned placement for larger screens */
+    }
+
+    .row1 {
+        grid-template-columns: 20vw 50vw;
+    }
+
+    .row2 {
+        grid-template-columns: 55vw 25vw;
+    }
+
+    .modulesParagraph {
+        max-height: 6em; /* Increase max-height for desktop */
+    }
+}
+
+/* Additional Styles */
+@media (max-width: 480px) {
+    /* For extra-small screens (e.g., small mobile phones) */
+    .see-more-btn {
+        width: 150px; /* Smaller button width */
+        height: 35px; /* Adjusted height */
+    }
+
+    .modulesParagraph {
+        max-height: 5em; /* Smaller collapsed height */
+    }
+}

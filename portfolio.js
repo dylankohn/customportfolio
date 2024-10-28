@@ -51,9 +51,10 @@ buttons.forEach(button => {
     button.addEventListener('click', function() {
         const paragraph = this.previousElementSibling; // Get the paragraph
 
-        if (this.textContent === 'See More...') {
+        if (!paragraph.classList.contains('expanded')) {
+            paragraph.classList.add('expanded');
             paragraph.style.maxHeight = '9em'; // Keep max height as 9em
-            paragraph.style.overflowY = 'none'; // Enable vertical scrolling
+            paragraph.style.overflowY = 'auto'; // Enable vertical scrolling
             paragraph.style.webkitMaskImage = 'none'; // Remove fade
             paragraph.style.maskImage = 'none';       // Remove mask
             this.textContent = 'See Less';            // Change button text
@@ -64,6 +65,7 @@ buttons.forEach(button => {
                 paragraph.style.webkitMaskImage = 'none';
             }, 200);
         } else {
+            paragraph.classList.remove('expanded');
             paragraph.style.maxHeight = '6em'; // Collapse height back to 6em
             paragraph.style.overflowY = 'hidden'; // Disable scrolling
             paragraph.style.webkitMaskImage = 'linear-gradient(180deg, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0))'; // Reapply fade
