@@ -1,0 +1,174 @@
+/* portfolio.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh; /* Set body height to full viewport height */
+    display: flex; /* Use flexbox for body */
+    flex-direction: column; /* Stack children vertically */
+}
+
+header {
+    background: #f3f3f3;
+    color: white;
+    padding: 1.5rem;
+    border: 1px solid #b2b2b2cf;
+    text-align: right;
+}
+
+nav a {
+    color: black;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+main {
+    display: flex; /* Use flexbox for main */
+    flex-direction: column; /* Stack children vertically */
+    flex: 1; /* Allow main to take up remaining space */
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    height: 55vh; /* Define the height to prevent collapse */
+    overflow: hidden;
+    margin: auto;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure image fills container */
+    object-fit: cover;
+    transition: opacity 1s ease;
+    opacity: 0; /* Start hidden */
+}
+
+#slide1 {
+    opacity: 1; /* Make the first slide visible initially */
+}
+
+#slide1 {
+    opacity: 1; /* Make the first slide visible initially */
+}
+
+img {
+    height: 55vh; /* Set height of the image */
+    width: 100vw; /* Maintain the aspect ratio */
+    object-fit: cover; /* Cover ensures the image fills the area */
+    object-position: 80% 20%; /* Show the bottom half of the image */
+    display: block;
+}
+
+/* Dot container styles */
+.dot-container {
+    position: absolute;
+    bottom: 10px; /* Position the dots at the bottom of the container */
+    left: 50%; /* Center the dots horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    display: flex; /* Use flexbox for spacing */
+}
+
+/* Dot styles */
+.dot {
+    height: 6px; /* Set the height of the dot */
+    width: 6px; /* Set the width of the dot */
+    margin: 0 5px; /* Space between dots */
+    background-color: white; /* Dot color */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Change cursor to pointer */
+    opacity: 0.5; /* Set initial opacity */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+.dot:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+.lower {
+    border: 1px solid #b2b2b2cf;
+    flex: 1; /* Allow lower to take up remaining space */
+    display: flex; /* Optional: Use flexbox for the content inside lower */
+    flex-direction: column; /* Stack children vertically inside lower */
+
+}
+
+.row1 {
+    display: grid;
+    grid-template-columns: 20vw 50vw;
+    justify-content: center;
+    margin-bottom: 2%;
+    background-color: white;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 55vw 25vw;
+    justify-content: center;
+    margin-bottom: 2%;
+    background-color: #def8fe;
+}
+
+.see-more-btn {
+    background-image: linear-gradient(#59a1bd, #5eabca);
+    border: none;
+    color: white;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: "Noto Serif Oriya", serif;
+    display: block;
+    cursor: pointer;
+}
+
+.modules {
+    margin-bottom: 20px; /* Space between modules */
+    padding: 5%;
+    display: flex; /* Allow vertical stacking */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.modulesParagraph {
+    display: -webkit-box;
+    max-height: 6em; /* Collapsed height */
+    margin-bottom: 10px;
+    overflow: hidden; /* Prevent overflow when collapsed */
+    width: 95%;
+    transition: max-height 0.3s ease;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0));
+    overflow-y: hidden; /* Prevent vertical scroll when collapsed */
+    scrollbar-color: rgba(0, 0, 0, 0.4) transparent;
+    scrollbar-width: thin;
+}
+
+.modulesParagraph.expanded {
+    max-height: 9em; /* Expanded height */
+    overflow-y: scroll; /* Allow vertical scrolling */
+}
+
+.intro, .featproj {
+    position: absolute;
+    background-color: #def8fecf; /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    top: 10%;
+    height: auto;
+    border: 1px solid #b2b2b2cf;
+}
+
+.intro {
+    left: 15%; /* Adjust to place it near the top of the image */
+    width: 20vw;
+    
+}
+
+.featproj {
+    right: 15%; /* Adjust to place it near the bottom of the image */
+    width: 20vw;
+}

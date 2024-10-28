@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif+Oriya:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Education</a>
+            <a href="#">Work Experience</a>
+        </nav>
+    </header>
+    <main>
+        <div class="slideshow">
+            <img id="slide1" class="slide" src="profdude.jpg" alt="Slide 1">
+            <img id="slide2" class="slide" src="slidedude.jpeg" alt="Slide 2" style="opacity: 0;"> <!-- Start hidden -->
+            <div class="dot-container">
+                <div class="dot" onclick="changeSlide(-1)"></div>
+                <div class="dot" onclick="changeSlide(1)"></div>
+            </div>
+            <div class="intro">
+                <h1>Welcome to My Portfolio</h1>
+                <p class="modulesParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius et excepturi inventore nulla, labore neque vel porro eveniet modi possimus illum. Praesentium minus adipisci temporibus voluptatem laborum. Optio, delectus dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure impedit eius inventore ipsum tenetur quam numquam suscipit, nisi provident asperiores corrupti vero amet sapiente mollitia voluptatem blanditiis eaque. At, ratione!</p>
+                <button class="see-more-btn">See More...</button>
+            </div>
+            <div class="featproj">
+                <h1>Featured Projects</h1>
+                <p class="modulesParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ea excepturi qui ullam repellendus tempore eaque dolores labore officia recusandae atque eos accusamus, itaque mollitia. Maiores error pariatur doloribus ad.</p>
+                <button class="see-more-btn">See More...</button>
+            </div>
+        </div>
+        <div class="lower">
+            <div class="row1">
+                <div class="modules">
+                    <h1>About Me</h1>
+                    <p class="modulesParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quod magni, ea dolorum maiores, sint architecto accusamus fugit neque odio aut quasi ex incidunt asperiores ullam voluptas ducimus velit molestias!</p>
+                    <button class="see-more-btn">See More...</button>
+                </div>
+                <div class="modules">
+                    <h1>Skills</h1>
+                    <p class="modulesParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quod magni, ea dolorum maiores, sint architecto accusamus fugit neque odio aut quasi ex incidunt asperiores ullam voluptas ducimus velit molestias!</p>
+                    <button class="see-more-btn">See More...</button>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="modules">
+                    <h1>Education</h1>
+                    <p class="modulesParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quod magni, ea dolorum maiores, sint architecto accusamus fugit neque odio aut quasi ex incidunt asperiores ullam voluptas ducimus velit molestias!</p>
+                    <button class="see-more-btn">See More...</button>
+                </div>
+                <div class="modules">
+                    <div>
+                        <h1>Projects</h1>
+                        <p class="modulesParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est quod magni, ea dolorum maiores, sint architecto accusamus fugit neque odio aut quasi ex incidunt asperiores ullam voluptas ducimus velit molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sed delectus, architecto rem sequi ex et esse perspiciatis debitis quis a id dolorum! Omnis quibusdam, ab voluptate harum dolor officiis.</p>
+                        <button class="see-more-btn">See More...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
