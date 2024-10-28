@@ -282,14 +282,7 @@ img {
 /* Additional Styles */
 @media (max-width: 480px) {
     /* For extra-small screens (e.g., small mobile phones) */
-    .see-more-btn {
-        width: 150px; /* Smaller button width */
-        height: 35px; /* Adjusted height */
-    }
-
-    .modulesParagraph {
-        max-height: 5em; /* Smaller collapsed height */
-    }
+    
 
     .header {
         padding: 1rem;
@@ -309,7 +302,7 @@ img {
 
     .intro, .featproj {
         position: relative;  /* Set to relative to follow normal flow */
-        width: 10%; /* Full width minus a bit of margin */
+        width: 90vw; /* Full width minus a bit of margin */
         left: 0; /* Remove any left/right positioning */
         margin-bottom: 2%;
     }
