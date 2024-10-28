@@ -290,4 +290,35 @@ img {
     .modulesParagraph {
         max-height: 5em; /* Smaller collapsed height */
     }
+
+    .header {
+        padding: 1rem;
+        text-align: center; /* Center align header text */
+    }
+
+    nav a {
+        font-size: medium; /* Smaller font size for nav links */
+    }
+
+    .slideshow {
+        position: relative;
+        height: 35vh; /* Smaller height for slideshow on small screens */
+        overflow-y: scroll;
+        margin-bottom: 20px;
+    }
+
+    .intro, .featproj {
+        position: relative;  /* Set to relative to follow normal flow */
+        width: 90vw; /* Full width minus a bit of margin */
+        left: 0; /* Remove any left/right positioning */
+        margin-bottom: 2%;
+    }
+
+    .row1, .row2 {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+    .modules {
+        padding: 3%; /* Less padding */
+    }
 }
